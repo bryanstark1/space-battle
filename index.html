@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Battle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbit&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SPACE BATTLE</h1>
+  </header>
+  <article id="game">
+    <section id="display">
+      <div class="main-display">
+        <div class="ship" id="hero">
+          <div class="ship-name">Hero Ship</div>
+          <div class="icon-container"></div>
+          <div class="stats">
+            <div class="health stat-container">
+              <div class="stat-name">Hull Health</div>
+              <div class="stat-value"></div>
+            </div>
+            <div class="firepower stat-container">
+              <div class="stat-name">Firepower</div>
+              <div class="stat-value"></div>
+            </div>
+            <div class="accuracy stat-container">
+              <div class="stat-name">Accuracy</div>
+              <div class="stat-value"></div>
+            </div>
+            <div class="missiles stat-container">
+              <div class="stat-name">Missiles</div>
+              <div class="stat-value"></div>
+            </div>
+          </div>
+        </div>
+        <div id="viewport">
+          
+        </div>
+        <div id="enemy-container" style="display: none;"></div>
+        <div class="ship" id="enemy">
+          <div class="ship-name">Alien Ship</div>
+          <div class="icon-container"></div>
+          <div class="stats">
+            <div class="health stat-container">
+              <div class="stat-name">Hull Health</div>
+              <div class="stat-value"></div>
+            </div>
+            <div class="firepower stat-container">
+              <div class="stat-name">Firepower</div>
+              <div class="stat-value"></div>
+            </div>
+            <div class="accuracy stat-container">
+              <div class="stat-name">Accuracy</div>
+              <div class="stat-value"></div>
+            </div>
+            <!-- <div class="missiles stat-container">
+              <div class="stat-name">Missiles</div>
+              <div class="stat-value">n/a</div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="controls">
+      <div class="game-buttons">
+        <button id="start">Start Game</button>
+        <button id="commence">Commence Battle!</button>
+        <button id="proceed">Proceed to Attack!</button>
+        <button id="attack">Attack</button>
+        <button id="missile">Missile</button>
+        <button id="retreat">Retreat!</button>
+      </div>
+      <button class="button" id="reset">Reset Game</button>
+    </section>
+  </article>
+</body>
+</html>
