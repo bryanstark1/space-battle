@@ -192,6 +192,14 @@ const attack = (attShip, defShip) => {
 
 // Function to fire MISSILE
 const fireMissile = () => {
+  // Create missile icon
+  const $missile = $('<img>').attr('src', '/files/missile.png').css({'width':'500px', 'height':'500px'})
+  // Display missile on screen
+  $('#viewport').append($missile.css('transform', 'rotate(270deg)'));
+  // Remove missile image from screen
+  setTimeout(() => {
+    $('#viewport').children().eq(0).remove();
+  }, 3000);
   shipArr[0].hull = 0;
   $('#enemy .health .stat-value').text(shipArr[0].hull);
   hero.missiles -= 1;
